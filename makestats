@@ -1,0 +1,19 @@
+#!/bin/tcsh
+
+set filecount = 0
+foreach i (2 4 8 16)
+	foreach j (3 4 5)
+		foreach k (5 10 15)
+			echo >> stats/output
+			echo $i $j $k >> stats/output
+			echo >> stats/output
+			foreach c (0 1 2 3 4 5 6 7 8 9)
+				mfqs ../samp_proc/out$c $i $j $k >> stats/output
+				@ c = ($c + 1)
+			end
+			
+		end
+	end
+end
+
+

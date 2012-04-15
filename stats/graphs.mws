@@ -1,0 +1,102 @@
+{VERSION 6 0 "IBM INTEL NT" "6.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 
+0 0 1 }{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 1 }
+{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 
+2 2 1 1 1 1 }1 1 0 0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Error" -1 8 1 
+{CSTYLE "" -1 -1 "Courier" 1 10 255 0 255 1 2 2 2 2 2 1 1 1 3 1 }1 1 
+0 0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Maple Output" -1 11 1 {CSTYLE "" -1 
+-1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 1 1 1 }3 3 0 0 0 0 1 0 1 0 2 2 
+0 1 }{PSTYLE "Maple Output" -1 12 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 
+0 1 2 2 2 2 2 2 1 1 1 1 }1 3 0 0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Maple P
+lot" -1 13 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 1 1 
+1 }3 1 0 0 0 0 1 0 1 0 2 2 0 1 }}
+{SECT 0 {EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 12 "with(plots):" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 9 "plot3d();" }}{PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}{PARA 8 "" 1 "" {TEXT -1 92 "Error, (in plot3d) \+
+invalid input: Plot:-Preprocess uses a 2nd argument, p, which is missi
+ng\n" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 505 "R2:= \{[3,5,3380.6
+75],[3,10,3380.679],[3,15,3408.417778],[4,5,3380.177],[4,10,3380.177],
+[4,15,3362.855556],[5,5,3375.773],[5,10,3331.437778],[5,15,3375.773]\}
+;\n\nR4:=\{[3,5,3378.238],[3,10,3335.017778],[3,15,3378.238],[4,5,3371
+.818],[4,10,3371.818],[4,15,3371.818],[5,5,3360.088],[5,10,3360.088],[
+5,15,3360.088]\};\n\nR8:=\{[3,5,3349.383],[3,10,3349.383],[3,15,3349.3
+83],[4,5,3335.702],[4,10,3335.702],[4,15,3323.281111],[5,5,3328.652],[
+5,10,3328.652],[5,15,3328.652]\};\n\nR16:=\n\{[]\};\n# for each TQ\n# \+
+queues age avg" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}{PARA 12 "" 1 
+"" {XPPMATH 20 "6#>%#R2G<+7%\"\"$\"\"&$\"(v1Q$!\"$7%F'\"#5$\"(z1Q$F+7%
+F'\"#:$\"+yxT3M!\"'7%\"\"%F($\"(x,Q$F+7%F6F-F77%F6F1$\"+cb&GO$F47%F(F(
+$\"(tdP$F+7%F(F-$\"+yxVJLF47%F(F1F>" }}{PARA 12 "" 1 "" {XPPMATH 20 "6
+#>%#R4G<+7%\"\"$\"\"&$\"(Q#yL!\"$7%F'\"#5$\"+yx,NL!\"'7%F'\"#:F)7%\"\"
+%F($\"(==P$F+7%F4F-F57%F4F2F57%F(F($\"()3gLF+7%F(F-F:7%F(F2F:" }}
+{PARA 12 "" 1 "" {XPPMATH 20 "6#>%#R8G<+7%\"\"$\"\"&$\"($Q\\L!\"$7%F'
+\"#5F)7%F'\"#:F)7%\"\"%F($\"(-dL$F+7%F1F-F27%F1F/$\"+66GBL!\"'7%F(F($
+\"(_'GLF+7%F(F-F:7%F(F/F:" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$R16G<#
+7\"" }}}{EXCHG {PARA 8 "" 1 "" {TEXT -1 80 "Error, (in plot3d) first a
+rgument must be either in standard or parametric form\n" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }{TEXT -1 0 "" }}}{EXCHG {PARA 0 "
+> " 0 "" {MPLTEXT 1 0 351 "  plots[display]([\n   seq(seq(\n    plots[
+pointplot3d]([[22,41,10], [6,25,20], [34,23,50]],connect=true)\n   ,y=
+0..6),z=0..4),\n   seq(seq(\n    plots[pointplot3d]([[22,41,10], [6,25
+,20], [34,23,50]],connect=true)\n   ,x=0..3),z=0..4),\n   seq(seq(\n  \+
+  plots[pointplot3d]([[22,41,10], [6,25,20], [34,23,50]],connect=true)
+\n   ,x=0..3),y=0..6)\n  ],axes=box);\n" }}{PARA 13 "" 1 "" {GLPLOT3D 
+496 496 496 {PLOTDATA 3 "6`p-%'CURVESG6#7%7%$\"#A\"\"!$\"#TF*$\"#5F*7%
+$\"\"'F*$\"#DF*$\"#?F*7%$\"#MF*$\"#BF*$\"#]F*F#F#F#F#F#F#F#F#F#F#F#F#F
+#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F
+#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#F#-
+%*AXESSTYLEG6#%$BOXG" 1 2 0 1 10 0 2 1 1 2 2 1.000000 45.000000 
+45.000000 0 0 "Curve 1" "Curve 2" "Curve 3" "Curve 4" "Curve 5" "Curve
+ 6" "Curve 7" "Curve 8" "Curve 9" "Curve 10" "Curve 11" "Curve 12" "Cu
+rve 13" "Curve 14" "Curve 15" "Curve 16" "Curve 17" "Curve 18" "Curve \+
+19" "Curve 20" "Curve 21" "Curve 22" "Curve 23" "Curve 24" "Curve 25" 
+"Curve 26" "Curve 27" "Curve 28" "Curve 29" "Curve 30" "Curve 31" "Cur
+ve 32" "Curve 33" "Curve 34" "Curve 35" "Curve 36" "Curve 37" "Curve 3
+8" "Curve 39" "Curve 40" "Curve 41" "Curve 42" "Curve 43" "Curve 44" "
+Curve 45" "Curve 46" "Curve 47" "Curve 48" "Curve 49" "Curve 50" "Curv
+e 51" "Curve 52" "Curve 53" "Curve 54" "Curve 55" "Curve 56" "Curve 57
+" "Curve 58" "Curve 59" "Curve 60" "Curve 61" "Curve 62" "Curve 63" "C
+urve 64" "Curve 65" "Curve 66" "Curve 67" "Curve 68" "Curve 69" "Curve
+ 70" "Curve 71" "Curve 72" "Curve 73" "Curve 74" "Curve 75" "Curve 76
+" "Curve 77" "Curve 78" "Curve 79" "Curve 80" "Curve 81" "Curve 82" "C
+urve 83" }}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 179 "  plots[displa
+y]([\n     plots[pointplot3d](R2,symbol=box,color=green),\nplots[point
+plot3d](R4,symbol=cross,color=red),\nplots[pointplot3d](R8,symbol=circ
+le,color=blue)\n],axes=box);\n" }}{PARA 13 "" 1 "" {GLPLOT3D 618 543 
+543 {PLOTDATA 3 "6&-%'POINTSG6-7%$\"\"$\"\"!$\"\"&F)$\"(v1Q$!\"$7%F'$
+\"#5F)$\"(z1Q$F.7%F'$\"#:F)$\"+yxT3M!\"'7%$\"\"%F)F*$\"(x,Q$F.7%F;F0F=
+7%F;F5$\"+cb&GO$F97%F*F*$\"(tdP$F.7%F*F0$\"+yxVJLF97%F*F5FD-%'COLOURG6
+&%$RGBG$F)F)$\"*++++\"!\")FN-%'SYMBOLG6#%$BOXG-F$6-7%F'F*$\"(Q#yLF.7%F
+'F0$\"+yx,NLF97%F'F5FY7%F;F*$\"(==P$F.7%F;F0Fjn7%F;F5Fjn7%F*F*$\"()3gL
+F.7%F*F0F_o7%F*F5F_o-FK6&FMFOFNFN-FS6#%&CROSSG-F$6-7%F'F*$\"($Q\\LF.7%
+F'F0F[p7%F'F5F[p7%F;F*$\"(-dL$F.7%F;F0F`p7%F;F5$\"+66GBLF97%F*F*$\"(_'
+GLF.7%F*F0Fgp7%F*F5Fgp-FK6&FMFNFNFO-FS6#%'CIRCLEG-%*AXESSTYLEGFT" 1 2 
+0 1 10 0 2 1 1 2 2 1.000000 94.000000 9.000000 0 0 "Curve 1" "Curve 2
+" "Curve 3" }}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 427 "w2:= \{[3,5
+,62.81],[3,10,62.81],[3,15,63.13],[4,5,62.81],[4,10,62.81],[4,15,63.13
+],[5,5,62.81],[5,10,63.13],[5,15,62.81]\};\n\nw4:=\{[3,5,159.71],[3,10
+,160.77],[3,15,159.71],[4,5,159.71],[4,10,159.71],[4,15,159.71],[5,5,1
+59.71],[5,10,159.71],[5,15,159.71]\};\n\nw8:=\{[3,5,348.32],[3,10,348.
+32],[3,15,348.32],[4,5,348.32],[4,10,348.32],[4,15,348.32],[5,5,348.32
+],[5,10,348.32],[5,15,348.32]\};\n\nR16:=\n\{[]\};\n# for each TQ\n# q
+ueues age avg" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#w2G<+7%\"\"$\"\"&$
+\"%\"G'!\"#7%F'\"#5F)7%F'\"#:$\"%8jF+7%\"\"%F(F)7%F3F-F)7%F3F/F07%F(F(
+F)7%F(F-F07%F(F/F)" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%#w4G<+7%\"\"$
+\"\"&$\"&rf\"!\"#7%F'\"#5$\"&xg\"F+7%F'\"#:F)7%\"\"%F(F)7%F3F-F)7%F3F1
+F)7%F(F(F)7%F(F-F)7%F(F1F)" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%#w8G<+
+7%\"\"$\"\"&$\"&K[$!\"#7%F'\"#5F)7%F'\"#:F)7%\"\"%F(F)7%F1F-F)7%F1F/F)
+7%F(F(F)7%F(F-F)7%F(F/F)" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$R16G<#7
+\"" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 177 " plots[display]([\n \+
+    plots[pointplot3d](w2,symbol=box,color=green),\nplots[pointplot3d]
+(w4,symbol=cross,color=red),\nplots[pointplot3d](w8,symbol=circle,colo
+r=blue)\n],axes=box);" }}{PARA 13 "" 1 "" {GLPLOT3D 496 496 496 
+{PLOTDATA 3 "6&-%'POINTSG6-7%$\"\"$\"\"!$\"\"&F)$\"%\"G'!\"#7%F'$\"#5F
+)F,7%F'$\"#:F)$\"%8jF.7%$\"\"%F)F*F,7%F8F0F,7%F8F3F57%F*F*F,7%F*F0F57%
+F*F3F,-%'COLOURG6&%$RGBG$F)F)$\"*++++\"!\")FC-%'SYMBOLG6#%$BOXG-F$6-7%
+F'F*$\"&rf\"F.7%F'F0$\"&xg\"F.7%F'F3FN7%F8F*FN7%F8F0FN7%F8F3FN7%F*F*FN
+7%F*F0FN7%F*F3FN-F@6&FBFDFCFC-FH6#%&CROSSG-F$6-7%F'F*$\"&K[$F.7%F'F0F
+\\o7%F'F3F\\o7%F8F*F\\o7%F8F0F\\o7%F8F3F\\o7%F*F*F\\o7%F*F0F\\o7%F*F3F
+\\o-F@6&FBFCFCFD-FH6#%'CIRCLEG-%*AXESSTYLEGFI" 1 2 0 1 10 0 2 1 1 2 2 
+1.000000 85.000000 -16.000000 0 0 "Curve 1" "Curve 2" "Curve 3" }}}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}}{MARK "0" 0 }{VIEWOPTS 
+1 1 0 1 1 1803 1 1 1 1 }{PAGENUMBERS 0 1 2 33 1 1 }
